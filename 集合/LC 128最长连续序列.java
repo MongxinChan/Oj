@@ -2,7 +2,7 @@ class Solution {
     public int longestConsecutive(int[] nums) {
         Set<Integer> hashSet= new HashSet<Integer>();
         for(int data : nums) hashSet.add(data);
-        int answer = 0;
+        int ans = 0;
 
         for(int x : nums){
             if(hashSet.contains(x-1)){//注意不是containsKey
